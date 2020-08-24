@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <meta name="description" content="One page to login and register">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Joandysson Gama">
+    <meta property="og:image" content="assets/img/icon/rocket.ico">
+    <title>Login - Auth</title>
+
+    <link rel="stylesheet"  href="assets/css/style.css">
+    <link rel="icon" type="image/png"  href="assets/img/icon/rocket.ico">
+
+    <script defer src="assets/js/app.js"></script>
+    <script defer src="assets/js/lib/fontawesome.js?v=5.14.0" integrity="sha384-3Nqiqht3ZZEO8FKj7GR1upiI385J92VwWNLj+FqHxtLYxd9l+WYpeqSOrLh0T12c" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content first-content">
+            <div class="first-column-sign-in">
+                <h2 class="title first-title">Bem-vindo! &nbsp;<span class="to-vertical">: )</span></h2>
+                <img width="28%" src="assets/img/svg/login.svg" alt="">
+                <div>
+                    <p class="description first-description">Fique conectado com a gente</p>
+                    <p class="description first-description">faça o login com suas informações</p>
+                </div>
+                <button id="signin" class="btn btn-enter">ENTRAR</button>
+            </div>
+            <div class="secund-column">
+                <h2 class="title second-title">Criar conta</h2>
+                <div class="form">
+                    <p class="description second-description">Informe os dados abaixo para criar a sua conta</p>
+                    <form>
+                        <div class="input-block">
+                            <label class="label-input">
+                                <i class="far fa-user icone-input" ></i>
+                                <input type="text" placeholder="Nome">
+                            </label>
+                        </div>
+                        <div class="input-block">
+                            <label class="label-input">
+                                <i class="far fa-envelope icone-input"></i>
+                                <input type="email" placeholder="Email">
+                            </label>
+                        </div>
+                        <div class="input-block">
+                            <label class="label-input">
+                                <i class="fas fa-lock icone-input"></i>
+                                <input type="password" placeholder="Senha">
+                            </label>
+                        </div>
+                        <div class="div-btn">
+                            <button type="submit" class="btn btn-register">REGISTAR</button>
+                            <button  type="button" class="btn btn-register btn-mobile enter">ENTRAR</button>
+                        </div>
+                    </form>
+                </div>
+                    <div class="midia-social">
+                        <ul class="social-media-list">
+                            <li class="social-media-item">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li  class="social-media-item">
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            </li>
+                            <li  class="social-media-item">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+                    </div><!--social media-->
+            </div><!--second column-->
+        </div><!--first content-->
+
+        <div class="content second-content">
+            <div class="first-column-sign-up">
+                <h2 class="title first-title">Olá, seja bem-vindo!</h2>
+                <img width="28%" src="assets/img/svg/register.svg" alt="">
+                <div>
+                    <p class="description first-description">Crie a sua conta</p>
+                    <p class="description first-description">e desfrute dos nossos serviços</p>
+                </div>
+                <button id="signup" class="btn btn-enter">REGISTRAR</button>
+            </div>
+            <div class="secund-column">
+                <h2 class="title second-title">Acessar sua conta</h2>
+                    <div class="form">
+                        <p class="description second-description">Informe suas credenciais para iniciar a sessão</p>
+                        <form>
+                            <div class="input-block">
+                                <label class="label-input">
+                                    <i class="far fa-envelope icone-input"></i>
+                                    <input type="email" placeholder="Email">
+                                </label>
+                            </div>
+                            <div class="input-block">
+                                <label class="label-input">
+                                    <i class="fas fa-lock icone-input"></i>
+                                    <input type="password" placeholder="Senha">
+                                </label>
+                            </div>
+                            <div class="div-btn">
+                                <button type="submit" class="btn btn-register">ENTRAR</button>
+                                <button type="button" class="btn btn-register btn-mobile register">REGISTAR</button>
+                            </div>
+                            <br>
+                            <a class="forget-password" href="#">Esqueci a senha</a>
+                        </form>
+                    </div>
+                    <div class="midia-social">
+                        <ul class="social-media-list">
+                            <li class="social-media-item">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li  class="social-media-item">
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            </li>
+                            <li  class="social-media-item">
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!--social media-->
+            </div><!--second column-->
+        </div><!--secpnd content-->
+    </div>
+</body>
+</html>
