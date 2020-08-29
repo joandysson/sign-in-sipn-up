@@ -146,37 +146,6 @@ input{
     align-items: center;
 }
 
-.social-media-list{
-    display: flex;
-    list-style: none;
-}
-
-.social-media-item a{
-    display: block;
-    border: 1px solid var(--background);
-    border-radius: 26%;
-    width: 25px;
-    height: 25px;
-    padding: 0.4rem;
-    line-height: 25px;
-    text-align: center;
-    font-size: 1.6rem;
-}
-
-.social-media-item:not(:first-child){
-    margin-left: 10px;
-}
-
-.social-media-item a {
-    color: var(--tertiary);
-    transition: 0.3s;
-}
-
-.social-media-item a:hover{
-    color: var(--primary);
-    border-color: var(--primary);
-}
-
 .form{
     display: flex;
     flex-direction: column;
@@ -251,66 +220,66 @@ input{
     text-transform: capitalize;
 }
 
-.sign-in-js .first-column-sign-up {
+.sign-in .first-column-sign-up {
     transition: z-index 0.5s ease-in 0.6s;
 }
 
-.sign-in-js .first-column-sign-in {
+.sign-in .first-column-sign-in {
     transition: z-index 0s ease-up 0s;
 }
 
-.sign-up-js .first-column-sign-up {
+.sign-up .first-column-sign-up {
     transition: z-index 0s ease-up 0s;
 }
 
-.sign-up-js .first-column-sign-in {
+.sign-up .first-column-sign-in {
     transition: z-index 0.5s ease-in 0.6s;
 }
 
-.sign-in-js .first-content .first-column-sign-in{
+.sign-in .first-content .first-column-sign-in{
     z-index: -1;
 }
-.sign-in-js .first-content .first-column-sign-up{
+.sign-in .first-content .first-column-sign-up{
     z-index: -1;
 }
 
-.sign-in-js .second-content .secund-column{
+.sign-in .second-content .secund-column{
     z-index: 11;
 }
 
-.sign-in-js .second-content .first-column-sign-in{
+.sign-in .second-content .first-column-sign-in{
     z-index: 13;
 }
 
-.sign-in-js .second-content .first-column-sign-up{
+.sign-in .second-content .first-column-sign-up{
     z-index: 13;
 }
 
-.sign-up-js .second-content .first-column-sign-in,
-.sign-up-js .second-content .secund-column{
+.sign-up .second-content .first-column-sign-in,
+.sign-up .second-content .secund-column{
     z-index: -1;
 }
 
-.sign-up-js .second-content .first-column-sign-up,
-.sign-up-js .second-content .secund-column{
+.sign-up .second-content .first-column-sign-up,
+.sign-up .second-content .secund-column{
     z-index: -1;
 }
 
-.sign-up-js .first-content .secund-column{
+.sign-up .first-content .secund-column{
     z-index: 11;
 }
 
-.sign-up-js .first-content .first-column-sign-in{
+.sign-up .first-content .first-column-sign-in{
     z-index: 13;
 }
 
 /*DESLOCAMENTO CONTEÚDO ATRÁS DO CONTENT-BEFORE */
-.sign-in-js .first-content .secund-column{
+.sign-in .first-content .secund-column{
     z-index: -1;
     animation: displacement 0.8s;
 }
 
-.sign-up-js .second-content .secund-column{
+.sign-up .second-content .secund-column{
     animation: displacement 0.8s;
 }
 
@@ -337,14 +306,14 @@ input{
         left: -5vw;
     }
 
-    .sign-in-js .content::before{
+    .sign-in .content::before{
         left: 50vw;
         animation: slide-in 1s linear;
         border-radius: 0px 3px 3px 0px;
         z-index: 12;
     }
 
-    .sign-up-js .content::before{
+    .sign-up .content::before{
         animation: slide-up 1s linear;
         border-radius: 3px 0 0 3px;
         z-index: 12;
@@ -372,11 +341,11 @@ input{
         width: 75vw;
     }
 
-    .sign-in-js .first-content .secund-column{
+    .sign-in .first-content .secund-column{
         animation: displacement 0s;
     }
 
-    .sign-up-js .second-content .secund-column{
+    .sign-up .second-content .secund-column{
         animation: displacement 0s;
     }
 }

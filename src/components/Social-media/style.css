@@ -1,0 +1,30 @@
+.social-media-list{
+    display: flex;
+    list-style: none;
+}
+
+.social-media-item a{
+    display: block;
+    border: 1px solid var(--background);
+    border-radius: 26%;
+    width: 25px;
+    height: 25px;
+    padding: 0.4rem;
+    line-height: 29px;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.social-media-item:not(:first-child){
+    margin-left: 10px;
+}
+
+.social-media-item a {
+    color: var(--tertiary);
+    transition: 0.3s;
+}
+
+.social-media-item a:hover{
+    color: var(--primary);
+    border-color: var(--primary);
+}
