@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 
 interface SnackBarProps {
-    text?: String;
+    text: String;
 }
 
 export const SnackBar: React.FC<SnackBarProps> = ({ text }) => {

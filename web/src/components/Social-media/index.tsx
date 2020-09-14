@@ -1,7 +1,5 @@
 import React from 'react';
-import { FaLinkedinIn } from 'react-icons/fa';
-import { FaGoogle } from 'react-icons/fa';
-import { FaFacebookF } from 'react-icons/fa';
+import { FaLinkedinIn, FaGoogle, FaFacebookF } from 'react-icons/fa';
 import './style.css';
 
 const iconWithLink = [
@@ -17,7 +15,7 @@ function SocialMedia() {
             {iconWithLink.map((prop, key) => {
                 return (
                     <li key={key} className="social-media-item">
-                    <a href={prop.link}>{prop.icon}</a>
+                        <a href={prop.link}>{prop.icon}</a>
                     </li>
                 );
             })}
