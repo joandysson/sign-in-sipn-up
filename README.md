@@ -42,24 +42,26 @@ Import the `Auth.postman_collection.json` on Insomnia App or click on [Run in po
 
 **Clone the project and access the folder**
 
-``` $ git clone git@github.com:Joandysson/sign-in-sipn-up.git ```
+ $ git clone git@github.com:Joandysson/sign-in-sipn-up.git
 
+```
+# Install
 
-### Install
+$ yarn
 
-```$ yarn ```
+# Run migrations
 
-### Run migrations
+ $ yarn server typeorm  migration:run
 
-``` $ yarn server typeorm  migration:run ```
+# Run server
 
-### Run server
+ $ yarn server dev
 
-``` $ yarn server dev ```
+# Run web
 
-### Run web
+ $ yarn web start
 
-``` $ yarn web start ```
+```
 
 
 > by Joandysson Gama [See my linkedin](https://www.linkedin.com/in/joandysson-gama-63360150/)
