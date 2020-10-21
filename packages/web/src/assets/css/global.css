@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+:root {
+    font-size: 60%;
+    --primary: #8D14DE;
+    --secondary: #FFFFFF;
+    --tertiary: #95a5a6;
+    --btn-border: #d099f5;
+    --background: #d3d3d3;
+    --background-input:#ecf0f1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    outline: none;
+}
+
+body,
+input,
+button {
+    font: 400 1.6rem Roboto;
+}

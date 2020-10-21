@@ -1,0 +1,17 @@
+body #root > div {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logout {
+    padding: 10px 15px;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 3px;
+
+    margin-top: 50px;
+    cursor: pointer;
+}

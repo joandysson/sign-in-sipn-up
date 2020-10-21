@@ -1,0 +1,431 @@
+input{
+    font-weight: 500;
+}
+
+.to-vertical {
+    writing-mode: vertical-lr;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background);
+}
+
+.content{
+    border-radius: 3px;
+    background-color: white;
+    width: 90vw;
+    height: 70vh;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.first-title{
+    color: var(--secondary);
+    font-size: 2.6rem;
+    font-weight: bold;
+    /* text-transform: capitalize; */
+}
+
+.second-title{
+    color: var(--primary);
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.description{
+    font:300 1.6rem Roboto;
+    line-height:30px;
+}
+
+.first-description{
+    color: var(--secondary);
+}
+
+.second-description{
+    color: var(--primary);
+}
+
+.btn{
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: var(--secondary);
+    font: 400 1.4rem Roboto;
+    padding: 10px 50px;
+    cursor: pointer;
+    width: auto;
+    align-self: center;
+}
+
+.div-btn {
+    margin: 0px 8px;
+}
+
+.btn-enter{
+    background: transparent;
+    border: 1px solid var(--secondary);
+    transition: background-color -2s;
+}
+
+.btn-register{
+    background-color:var(--primary);
+    border: 1px solid var(--btn-border);
+    transition: background-color -2s;
+    margin-top: 1.4rem;
+}
+
+.btn-enter:hover{
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+.btn-register:hover{
+    background-color: var(--secondary);
+    border: 1px solid var(--primary);
+    color:var(--primary);
+}
+
+.btn-register-mobile{
+    background: white;
+    color: var(--primary);;
+}
+
+.btn-enter-mobile {
+    background: white;
+    color: var(--primary);;
+}
+
+.first-content{
+    display: flex;
+}
+
+.first-content .secund-column{
+    z-index: 11;
+    height: 65vh;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.first-column-sign-in, .first-column-sign-up{
+    /* transition: display 1s ease-in 1s; */
+    text-align: center;
+    width: 40vw;
+    z-index: 10;
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    place-content: space-evenly
+}
+
+.secund-column{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+}
+
+.form input{
+    height: 45px;
+    width: 100%;
+    background-color: var(--background-input);
+}
+
+.label-input{
+    background-color: var(--background-input);
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+
+.icone-input{
+    color: var(--tertiary);
+    padding: 0 5px ;
+}
+
+.input-block {
+    position: relative;
+}
+
+.input-block:focus-within::after {
+    width: calc(100% - 4.6rem) ;
+    height: 2px;
+    content: '';
+    background: var(--primary);
+    position: absolute;
+    right: 2.6rem;
+    bottom: 0.8rem;
+}
+
+/*second content*/
+
+.second-content{
+    position: absolute;
+    display:flex ;
+}
+
+.second-content .first-column-sign-in {
+    order: 2;
+    z-index: -1;
+}
+
+.second-content .first-column-sign-up {
+    order: 2;
+    z-index: -1;
+}
+
+.second-content .secund-column{
+    order: 1;
+    z-index: -1;
+    height: 65vh;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.forget-password{
+    color: var(--tertiary);
+    font-size: 14px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.forget-password::first-letter{
+    text-transform: capitalize;
+}
+
+.sign-in .first-column-sign-up {
+    transition: z-index 0.5s ease-in 0.6s;
+}
+
+.sign-in .first-column-sign-in {
+    transition: z-index 0s ease-up 0s;
+}
+
+.sign-up .first-column-sign-up {
+    transition: z-index 0s ease-up 0s;
+}
+
+.sign-up .first-column-sign-in {
+    transition: z-index 0.5s ease-in 0.6s;
+}
+
+.sign-in .first-content .first-column-sign-in{
+    z-index: -1;
+}
+.sign-in .first-content .first-column-sign-up{
+    z-index: -1;
+}
+
+.sign-in .second-content .secund-column{
+    z-index: 11;
+}
+
+.sign-in .second-content .first-column-sign-in{
+    z-index: 13;
+}
+
+.sign-in .second-content .first-column-sign-up{
+    z-index: 13;
+}
+
+.sign-up .second-content .first-column-sign-in,
+.sign-up .second-content .secund-column{
+    z-index: -1;
+}
+
+.sign-up .second-content .first-column-sign-up,
+.sign-up .second-content .secund-column{
+    z-index: -1;
+}
+
+.sign-up .first-content .secund-column{
+    z-index: 11;
+}
+
+.sign-up .first-content .first-column-sign-in{
+    z-index: 13;
+}
+
+/*DESLOCAMENTO CONTEÚDO ATRÁS DO CONTENT-BEFORE */
+.sign-in .first-content .secund-column{
+    z-index: -1;
+    animation: displacement 0.8s;
+}
+
+.sign-up .second-content .secund-column{
+    animation: displacement 0.8s;
+}
+
+@media (min-width: 950px){
+    .btn-mobile {
+        display: none;
+    }
+
+    .content::before{
+        transition: border 1s;
+        content: "";
+        position: absolute;
+        background-color: var(--primary);
+        height: 100vh;
+
+        /* CSS BEFORE | layout 1 */
+        /* width: 40vw; */
+        /* height: 70vh; */
+        /* left: 0vw; */
+
+        /* CSS AFTER | layout 2 */
+        width: 45vw;
+        border-radius: 3px 0 0 3px;
+        left: -5vw;
+    }
+
+    .sign-in .content::before{
+        left: 50vw;
+        animation: slide-in 1s linear;
+        border-radius: 0px 3px 3px 0px;
+        z-index: 12;
+    }
+
+    .sign-up .content::before{
+        animation: slide-up 1s linear;
+        border-radius: 3px 0 0 3px;
+        z-index: 12;
+    }
+
+}
+
+@media (max-width: 949px){
+    .btn-mobile {
+        display: inline;
+    }
+
+    .first-column-sign-in {
+        display: none;
+    }
+    .first-column-sign-up {
+        display: none;
+    }
+
+    .secund-column {
+        width: 90vw;
+    }
+
+    .form {
+        width: 75vw;
+    }
+
+    .sign-in .first-content .secund-column{
+        animation: displacement 0s;
+    }
+
+    .sign-up .second-content .secund-column{
+        animation: displacement 0s;
+    }
+}
+
+@media (max-width: 447px){
+    .btn {
+        width: 100%;
+    }
+    .content {
+        height: 90vh;
+    }
+    .first-column-sign-in, .first-column-sign-up{
+        height: 90vh;
+    }
+
+    .midia-social {
+        margin-top: 1.4rem;
+    }
+}
+
+/* ANIMATION CSS TO CONTENT */
+@keyframes displacement{
+    from{
+        left: 0;
+        opacity: 1;
+        z-index: 12;
+    }
+
+    25%{
+        left: -88px;
+        opacity: .2;
+    }
+
+    50%{
+        left: -100px;
+        opacity: .2;
+    }
+
+    to{
+        left: -110px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+/*ANIMATION CSS*/
+@keyframes slide-in{
+    from{
+        left: 0vw;
+    }
+
+    25%{
+        left: 5vw;
+        width: 45vw;
+    }
+
+    50%{
+        left: 25vw;
+        width: 50vw;
+    }
+
+    75%{
+        left: 45vw;
+        width: 45vw;
+    }
+
+    to{
+        left: 50vw;
+    }
+}
+
+@keyframes slide-up{
+    from{
+        left: 50vw;
+    }
+
+    25%{
+        left: 45vw;
+        width: 45vw;
+    }
+
+    50%{
+        left: 25vw;
+        width: 50vw;
+    }
+
+    75%{
+        left: 5vw;
+        width: 45vw;
+    }
+
+    to{
+        /* CSS BEFORE | layout 1 */
+        /* left: 0vw; */
+
+        /* CSS AFTER | layout 2 */
+        left: -5vw;
+    }
+}
