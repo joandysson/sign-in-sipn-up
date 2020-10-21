@@ -2,7 +2,8 @@
 
 ### Typical use case
 
-``` sign-in-sign-up
+```
+sign-in-sign-up
 └── packages
     ├── web
     │   ├── src
@@ -13,7 +14,7 @@
     └── package.json
 ```
 
-<img alt="Layout" src="https://www.amazon.com/drive/v1/nodes/G_SKBaCoSp-ANDq6NhG8-w/contentRedirection?querySuffix=%3FviewBox%3D1366%2C462&ownerId=A1IWQTCCTJSP1H&cb=1603310100673">
+<img alt="Layout" src="./packages/web/src/assets/image/destop-mobile.png">
 
 
 ## 🚀 Technologies
