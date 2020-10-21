@@ -51,15 +51,15 @@ $ yarn
 
 # Run migrations
 
- $ yarn server typeorm  migration:run
+$ yarn server typeorm  migration:run
 
 # Run server
 
- $ yarn server dev
+$ yarn server dev
 
 # Run web
 
- $ yarn web start
+$ yarn web start
 
 ```
 
